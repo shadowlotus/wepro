@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQuery 1</title>
+
+</head>
+<body>
+    <h3>Judul</h3>
+    <div id="pesan1">Isi ID Pesan 1</div>
+    <div class="pesan1">Isi Class Pesan 1</div>
+
+    <h2>INI ADALAH LATIHAN JQUERY</h2>
+
+    <P>Didalam sini anda dapat merubah apapun, mari coba ubah <span id="hewan">DOMBA</span> menjadi hewan lain. Selanjutnya ubah <span class="job">POLISI</span> menjadi job lainnya</P>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        //document.getElementById().innertext
+        $(function(){
+            $("h3").html("Isi dari Judul diganti")
+            $("#pesan1").html("Isi ID Pesan 1 diubah")
+            $(".pesan1").html("Mengubah Isi Class Pesan 1")
+        });
+
+        $(()=>{
+            $("h2").html("Saya bisa JQuery")
+            $("#hewan").html("BABI")
+            $(".job").html("NGEPET")
+        })
+    </script>
+</body>
+</html>
